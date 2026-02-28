@@ -18,8 +18,6 @@ const footerLinks = {
     ],
     Company: [
         { label: "About SYD", href: "#" },
-        { label: "Our Team", href: "#" },
-        { label: "Careers", href: "#" },
         { label: "Contact", href: "/contact" },
     ],
 };

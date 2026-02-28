@@ -80,9 +80,9 @@ export default function Header() {
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 className="sticky top-0 z-50 bg-brand-bg/95 border-b border-brand-border backdrop-blur-md"
             >
-                <div className="flex items-center justify-between px-4 sm:px-6 py-2 max-w-7xl mx-auto">
+                <div className="flex items-center justify-between px-4 sm:px-6 py-2.5 max-w-7xl mx-auto">
                     {/* Left — Logo */}
-                    <div className="flex items-center gap-2.5">
+                    <div className="flex items-center gap-3 min-w-0 shrink-0">
                         <button
                             onClick={openProfile}
                             className="lg:hidden cursor-pointer"
@@ -93,18 +93,18 @@ export default function Header() {
                             <SydLogo size="sm" />
                         </div>
                         <div className="hidden sm:block">
-                            <span className="font-bold text-brand-light font-display text-lg">
+                            <span className="font-bold text-brand-light font-display text-lg leading-tight">
                                 SYD
                             </span>
-                            <p className="text-brand-muted text-xs leading-none">
+                            <p className="text-brand-muted text-[11px] leading-none">
                                 Scale Your Dreams
                             </p>
                         </div>
                     </div>
 
                     {/* Center — Search (desktop) */}
-                    <div className="hidden md:flex items-center gap-2 rounded-full bg-[rgba(238,241,189,0.08)] border border-brand-border px-4 py-2 w-64">
-                        <Search className="w-4 h-4 text-brand-muted" />
+                    <div className="hidden md:flex items-center gap-2 rounded-full bg-[rgba(238,241,189,0.08)] border border-brand-border px-4 py-2 w-72 mx-4">
+                        <Search className="w-4 h-4 text-brand-muted shrink-0" />
                         <input
                             type="text"
                             placeholder="Search..."
@@ -113,24 +113,20 @@ export default function Header() {
                     </div>
 
                     {/* Right */}
-                    <div className="flex items-center gap-3 sm:gap-5">
-                        <div className="flex flex-col items-center text-brand-light cursor-pointer hover:text-brand-card transition">
-                            <House className="w-5 h-5" />
-                            <span className="text-[10px] mt-0.5 hidden sm:block">Home</span>
-                        </div>
+                    <div className="flex items-center gap-5 sm:gap-6">
+                        <Link href="/" className="flex items-center text-brand-light cursor-pointer hover:text-brand-card transition">
+                            <House className="w-5 h-5 sm:w-[22px] sm:h-[22px]" />
+                        </Link>
 
                         {/* Messaging — mobile only */}
                         <button
                             onClick={openBooking}
-                            className="lg:hidden relative flex flex-col items-center text-brand-light cursor-pointer hover:text-brand-card transition"
+                            className="lg:hidden flex items-center text-brand-light cursor-pointer hover:text-brand-card transition"
                         >
-                            <div className="relative">
-                                <MessageSquareMore className="w-5 h-5" />
-                            </div>
-                            <span className="text-[10px] mt-0.5 hidden sm:block">Meet</span>
+                            <MessageSquareMore className="w-5 h-5" />
                         </button>
 
-                        <Link href="/contact" className="border border-brand-card text-brand-card rounded-full px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium hover:bg-brand-card hover:text-brand-text transition cursor-pointer">
+                        <Link href="/contact" className="border border-brand-card text-brand-card rounded-full px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-medium hover:bg-brand-card hover:text-brand-text transition cursor-pointer whitespace-nowrap">
                             Start Free
                         </Link>
                     </div>

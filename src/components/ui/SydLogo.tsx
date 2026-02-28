@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function SydLogo({
     size = "md",
 }: {
@@ -20,13 +18,12 @@ export default function SydLogo({
             className="rounded-full overflow-hidden shrink-0 bg-white"
             style={{ width: s.w, height: s.h }}
         >
-            <Image
+            <img
                 src="/syd-logo.png"
                 alt="Scale Your Dreams"
                 width={s.w}
                 height={s.h}
                 className="w-full h-full object-contain"
-                priority
             />
         </div>
     );
