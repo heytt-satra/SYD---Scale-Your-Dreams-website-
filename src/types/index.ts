@@ -28,6 +28,7 @@ export interface Service {
 export interface ThreadReplyType {
     id: string;
     avatar: string;
+    avatarImage?: string;
     name: string;
     handle: string;
     time: string;

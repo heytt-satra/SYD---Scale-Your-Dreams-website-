@@ -4,6 +4,7 @@ export const threadReplies: ThreadReplyType[] = [
     {
         id: "t1",
         avatar: "AR",
+        avatarImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
         name: "Alex Rivera",
         handle: "@arivera_design",
         time: "3h",
@@ -17,6 +18,7 @@ export const threadReplies: ThreadReplyType[] = [
     {
         id: "t2",
         avatar: "MJ",
+        avatarImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
         name: "Maya J.",
         handle: "@maya_ventures",
         time: "2h",
@@ -30,6 +32,7 @@ export const threadReplies: ThreadReplyType[] = [
     {
         id: "t3",
         avatar: "JK",
+        avatarImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face",
         name: "James K.",
         handle: "@jamesk_builds",
         time: "1h",
@@ -46,6 +49,7 @@ export const extendedReplies: ThreadReplyType[] = [
     {
         id: "t4",
         avatar: "NP",
+        avatarImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
         name: "Nina Patel",
         handle: "@ninapatel_ceo",
         time: "58m",
@@ -59,6 +63,7 @@ export const extendedReplies: ThreadReplyType[] = [
     {
         id: "t5",
         avatar: "CH",
+        avatarImage: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
         name: "Carlos Hernandez",
         handle: "@carlosh_growth",
         time: "45m",
@@ -72,6 +77,7 @@ export const extendedReplies: ThreadReplyType[] = [
     {
         id: "t6",
         avatar: "ER",
+        avatarImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
         name: "Emma Richardson",
         handle: "@emmar_writes",
         time: "30m",
@@ -85,6 +91,7 @@ export const extendedReplies: ThreadReplyType[] = [
     {
         id: "t7",
         avatar: "TS",
+        avatarImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face",
         name: "Tyrone Smith",
         handle: "@tyrones_brand",
         time: "22m",

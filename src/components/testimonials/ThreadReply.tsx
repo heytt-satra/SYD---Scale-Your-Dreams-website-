@@ -16,8 +16,6 @@ interface ThreadReplyProps {
 }
 
 export default function ThreadReply({ reply, index }: ThreadReplyProps) {
-    const initials = reply.avatar;
-
     return (
         <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -31,9 +29,17 @@ export default function ThreadReply({ reply, index }: ThreadReplyProps) {
 
             <div className="flex gap-3 pb-4 pl-5">
                 {/* Avatar */}
-                <div className="w-9 h-9 rounded-full bg-brand-accent flex items-center justify-center text-xs text-white font-bold flex-shrink-0 relative z-10">
-                    {initials}
-                </div>
+                {reply.avatarImage ? (
+                    <img
+                        src={reply.avatarImage}
+                        alt={reply.name}
+                        className="w-9 h-9 rounded-full object-cover shrink-0 relative z-10"
+                    />
+                ) : (
+                    <div className="w-9 h-9 rounded-full bg-brand-accent flex items-center justify-center text-xs text-white font-bold shrink-0 relative z-10">
+                        {reply.avatar}
+                    </div>
+                )}
 
                 {/* Content */}
                 <div className="flex-1 min-w-0">

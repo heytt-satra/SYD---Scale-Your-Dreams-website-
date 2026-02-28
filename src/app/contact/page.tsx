@@ -239,7 +239,7 @@ export default function ContactPage() {
                                     </div>
                                 </a>
                                 <a
-                                    href="tel:+1234567890"
+                                    href="tel:+918779008325"
                                     className="flex items-center gap-3 text-brand-muted hover:text-brand-light transition group"
                                 >
                                     <div className="w-10 h-10 rounded-lg bg-brand-card/10 flex items-center justify-center group-hover:bg-brand-card/20 transition">
@@ -247,7 +247,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="text-xs text-brand-muted">Phone</p>
-                                        <p className="text-sm text-brand-light">+1 (234) 567-890</p>
+                                        <p className="text-sm text-brand-light">+91 8779008325</p>
                                     </div>
                                 </a>
                                 <div className="flex items-center gap-3">
@@ -295,12 +295,6 @@ export default function ContactPage() {
                             </div>
                         </div>
 
-                        {/* Response Time */}
-                        <div className="bg-brand-card/10 rounded-2xl border border-brand-card/20 p-5 text-center">
-                            <p className="text-brand-card font-semibold text-sm">⚡ Average Response Time</p>
-                            <p className="text-brand-light text-2xl font-bold mt-1">Under 2 Hours</p>
-                            <p className="text-brand-muted text-xs mt-1">During business hours</p>
-                        </div>
                     </motion.div>
                 </div>
             </main>

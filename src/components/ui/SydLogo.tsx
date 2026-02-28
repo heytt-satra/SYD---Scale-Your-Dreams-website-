@@ -1,34 +1,33 @@
+import Image from "next/image";
+
 export default function SydLogo({
     size = "md",
 }: {
     size?: "xs" | "sm" | "md" | "lg" | "xl";
 }) {
     const sizes = {
-        xs: { w: "w-8", h: "h-8", title: "text-[8px]", sub: "text-[3.5px]", gap: "gap-[0.5px]" },
-        sm: { w: "w-10", h: "h-10", title: "text-[10px]", sub: "text-[4px]", gap: "gap-[1px]" },
-        md: { w: "w-12", h: "h-12", title: "text-[12px]", sub: "text-[5px]", gap: "gap-[1px]" },
-        lg: { w: "w-16", h: "h-16", title: "text-[16px]", sub: "text-[6px]", gap: "gap-[2px]" },
-        xl: { w: "w-20", h: "h-20", title: "text-[20px]", sub: "text-[8px]", gap: "gap-[2px]" },
+        xs: { w: 32, h: 32 },
+        sm: { w: 40, h: 40 },
+        md: { w: 48, h: 48 },
+        lg: { w: 64, h: 64 },
+        xl: { w: 80, h: 80 },
     };
 
     const s = sizes[size];
 
     return (
         <div
-            className={`${s.w} ${s.h} rounded-full bg-white flex flex-col items-center justify-center shrink-0 ${s.gap}`}
+            className="rounded-full overflow-hidden shrink-0 bg-white"
+            style={{ width: s.w, height: s.h }}
         >
-            <span
-                className={`font-display font-bold ${s.title} text-black leading-none`}
-                style={{ letterSpacing: "-0.02em" }}
-            >
-                Scale
-            </span>
-            <span
-                className={`font-sans font-bold ${s.sub} text-black leading-none uppercase`}
-                style={{ letterSpacing: "0.12em" }}
-            >
-                YOUR DREAMS
-            </span>
+            <Image
+                src="/syd-logo.png"
+                alt="Scale Your Dreams"
+                width={s.w}
+                height={s.h}
+                className="w-full h-full object-contain"
+                priority
+            />
         </div>
     );
 }

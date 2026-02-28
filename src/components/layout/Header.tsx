@@ -85,12 +85,14 @@ export default function Header() {
                     <div className="flex items-center gap-2.5">
                         <button
                             onClick={openProfile}
-                            className="lg:hidden cursor-pointer"
+                            className="lg:hidden cursor-pointer relative"
                         >
                             <SydLogo size="sm" />
+                            <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-brand-bg" />
                         </button>
-                        <div className="hidden lg:block">
+                        <div className="hidden lg:block relative">
                             <SydLogo size="sm" />
+                            <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-brand-bg" />
                         </div>
                         <div className="hidden sm:block">
                             <span className="font-bold text-brand-light font-display text-lg">
@@ -126,7 +128,6 @@ export default function Header() {
                         >
                             <div className="relative">
                                 <MessageSquareMore className="w-5 h-5" />
-                                <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-green-500 rounded-full border-2 border-brand-bg" />
                             </div>
                             <span className="text-[10px] mt-0.5 hidden sm:block">Meet</span>
                         </button>
