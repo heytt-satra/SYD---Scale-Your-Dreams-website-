@@ -85,14 +85,12 @@ export default function Header() {
                     <div className="flex items-center gap-2.5">
                         <button
                             onClick={openProfile}
-                            className="lg:hidden cursor-pointer relative"
+                            className="lg:hidden cursor-pointer"
                         >
                             <SydLogo size="sm" />
-                            <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-brand-bg" />
                         </button>
-                        <div className="hidden lg:block relative">
+                        <div className="hidden lg:block">
                             <SydLogo size="sm" />
-                            <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-brand-bg" />
                         </div>
                         <div className="hidden sm:block">
                             <span className="font-bold text-brand-light font-display text-lg">

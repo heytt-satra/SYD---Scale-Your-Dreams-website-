@@ -23,7 +23,10 @@ export default function BookingWidget() {
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex items-center gap-3 bg-brand-accent text-white px-4 py-2.5 rounded-t-xl shadow-2xl cursor-pointer hover:bg-brand-accent/90 transition w-72"
             >
-                <SydLogo size="sm" />
+                <div className="relative">
+                    <SydLogo size="sm" />
+                    <div className="absolute bottom-0 left-0 w-3 h-3 bg-green-500 rounded-full border-2 border-brand-accent" />
+                </div>
                 <div className="flex items-center gap-1 flex-1">
                     <span className="font-semibold text-sm">Book a Call</span>
                     <SydBadge size="xs" />
@@ -36,8 +39,6 @@ export default function BookingWidget() {
                         <ChevronUp className="w-4 h-4" />
                     )}
                 </div>
-                {/* Online indicator */}
-                <div className="absolute -top-1 left-3 w-3 h-3 bg-green-500 rounded-full border-2 border-brand-accent" />
             </button>
 
             {/* Widget Body */}
