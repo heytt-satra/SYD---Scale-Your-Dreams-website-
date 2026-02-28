@@ -1,9 +1,10 @@
 export default function SydLogo({
     size = "md",
 }: {
-    size?: "sm" | "md" | "lg" | "xl";
+    size?: "xs" | "sm" | "md" | "lg" | "xl";
 }) {
     const sizes = {
+        xs: { w: "w-8", h: "h-8", title: "text-[8px]", sub: "text-[3.5px]", gap: "gap-[0.5px]" },
         sm: { w: "w-10", h: "h-10", title: "text-[10px]", sub: "text-[4px]", gap: "gap-[1px]" },
         md: { w: "w-12", h: "h-12", title: "text-[12px]", sub: "text-[5px]", gap: "gap-[1px]" },
         lg: { w: "w-16", h: "h-16", title: "text-[16px]", sub: "text-[6px]", gap: "gap-[2px]" },

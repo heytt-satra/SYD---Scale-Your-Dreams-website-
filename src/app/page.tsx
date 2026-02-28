@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import LeftSidebar from "@/components/layout/LeftSidebar";
 import RightSidebar from "@/components/layout/RightSidebar";
 import BookingWidget from "@/components/layout/BookingWidget";
+import Footer from "@/components/layout/Footer";
 import PostComposer from "@/components/feed/PostComposer";
 import AboutPost from "@/components/feed/AboutPost";
 import ServicesCarousel from "@/components/feed/ServicesCarousel";
@@ -40,6 +41,7 @@ export default function Home() {
 
       {/* Booking Widget */}
       <BookingWidget />
+      <Footer />
     </div>
   );
 }

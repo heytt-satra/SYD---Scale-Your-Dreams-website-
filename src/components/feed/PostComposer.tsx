@@ -8,7 +8,7 @@ export default function PostComposer() {
         <div className="bg-[rgba(238,241,189,0.06)] rounded-xl border border-brand-border p-4">
             {/* Row 1: Avatar + Input */}
             <div className="flex items-center gap-3">
-                <SydLogo size="sm" />
+                <SydLogo size="xs" />
                 <input
                     type="text"
                     placeholder="Start a post, share your dream..."

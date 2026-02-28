@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import {
     Search,
     House,
@@ -125,14 +126,14 @@ export default function Header() {
                         >
                             <div className="relative">
                                 <MessageSquareMore className="w-5 h-5" />
-                                <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-green-500 rounded-full border border-brand-bg" />
+                                <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-green-500 rounded-full border-2 border-brand-bg" />
                             </div>
                             <span className="text-[10px] mt-0.5 hidden sm:block">Meet</span>
                         </button>
 
-                        <button className="border border-brand-card text-brand-card rounded-full px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium hover:bg-brand-card hover:text-brand-text transition cursor-pointer">
+                        <Link href="/contact" className="border border-brand-card text-brand-card rounded-full px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium hover:bg-brand-card hover:text-brand-text transition cursor-pointer">
                             Start Free
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </motion.header>
